@@ -14,3 +14,21 @@ body {
   background-color: #212121;
   display: flex;
 }
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;   /* stack vertically */
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .chatWindow {
+    width: 100%;
+    flex: 1;
+  }
+}
