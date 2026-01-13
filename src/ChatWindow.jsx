@@ -226,7 +226,7 @@ function ChatWindow() {
                     <img src={chatLogo} alt="chat logo" className="chat-logo" />
 
 
-                    <img src="src/assets/lok.svg" alt="gpt logo"></img>
+                    
 
                     
                 </span>
