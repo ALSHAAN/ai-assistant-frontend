@@ -4,7 +4,6 @@ import ChatWindow from "./ChatWindow.jsx";
 import {MyContext} from "./MyContext.jsx";
 import { useState } from 'react';
 import {v1 as uuidv1} from "uuid";
-
 import img from "./assets/lop.png";
 
 
