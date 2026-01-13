@@ -15,20 +15,21 @@ body {
   display: flex;
 }
 /* MOBILE FIX */
+/* MOBILE: show ONLY chat, hide sidebar */
 @media (max-width: 768px) {
   .app {
-    flex-direction: column;   /* stack vertically */
     height: 100vh;
     overflow: hidden;
   }
 
   .sidebar {
-    width: 100%;
-    height: auto;
+    display: none;
   }
 
   .chatWindow {
     width: 100%;
-    flex: 1;
+    height: 100vh;
   }
 }
+
+
