@@ -183,11 +183,11 @@ function ChatWindow() {
         };
 
         try {
-<<<<<<< HEAD
+
             const response = await fetch("http://localhost:8080/api/chat", options);
-=======
+
             const response = await fetch(`${API_URL}/api/chat`, options);
->>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
+
             const res = await response.json();
             console.log(res);
             setReply(res.reply);
@@ -222,12 +222,12 @@ function ChatWindow() {
         <div className="chatWindow">
             <div className="navbar">
                 <span>
-<<<<<<< HEAD
+
                     <img src={chatLogo} alt="chat logo" className="chat-logo" />
 
-=======
+
                     <img src="src/assets/lok.svg" alt="gpt logo"></img>
->>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
+
                     
                 </span>
                 <div className="userIconDiv" onClick={handleProfileClick}>
