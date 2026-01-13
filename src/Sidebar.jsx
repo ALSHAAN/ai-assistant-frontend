@@ -2,15 +2,23 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import {v1 as uuidv1} from "uuid";
+<<<<<<< HEAD
 import logo from "./assets/logop.svg";
 
+=======
+const API_URL = import.meta.env.VITE_API_URL;
+>>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
 
 function Sidebar() {
     const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply, setCurrThreadId, setPrevChats} = useContext(MyContext);
 
     const getAllThreads = async () => {
         try {
+<<<<<<< HEAD
             const response = await fetch("http://localhost:8080/api/thread");
+=======
+            const response = await fetch(`${API_URL}/api/thread`);
+>>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
             const res = await response.json();
             const filteredData = res.map(thread => ({threadId: thread.threadId, title: thread.title}));
             //console.log(filteredData);
@@ -37,7 +45,11 @@ function Sidebar() {
         setCurrThreadId(newThreadId);
 
         try {
+<<<<<<< HEAD
             const response = await fetch(`http://localhost:8080/api/thread/${newThreadId}`);
+=======
+            const response = await fetch(`${API_URL}/api/thread/${newThreadId}`);
+>>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
             const res = await response.json();
             console.log(res);
             setPrevChats(res);
@@ -50,7 +62,11 @@ function Sidebar() {
 
     const deleteThread = async (threadId) => {
         try {
+
             const response = await fetch(`http://localhost:8080/api/thread/${threadId}`, {method: "DELETE"});
+
+            const response = await fetch(`${API_URL}/api/thread/${threadId}`, { method: "DELETE" });
+
             const res = await response.json();
             console.log(res);
 
@@ -72,8 +88,12 @@ function Sidebar() {
 
             {/* //---new chat button-----//  */}
             <button onClick={createNewChat}>
+<<<<<<< HEAD
                 <img src={logo} alt="gpt logo" className="logo" />
 
+=======
+                <img src="src/assets/logop.svg" alt="gpt logo" className="logo"></img>
+>>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
                 <span><i className="fa-solid fa-pen-to-square"></i></span>
             </button>
 

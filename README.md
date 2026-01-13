@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,3 +11,28 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# Thinkr AI – Frontend
+
+React-based UI for **Thinkr AI**, an AI chat assistant using **Groq API** and a **Node + Express + MongoDB backend**.  
+The frontend provides a clean chat interface, thread management, and real-time AI responses.
+
+---
+
+## 🚀 Tech Stack
+- React  
+- CSS / Bootstrap / Material UI (update based on your project)  
+- Axios / Fetch for API calls  
+- Vite or CRA (adjust as needed)
+
+---
+
+## 🔧 Setup
+
+```bash
+cd frontend
+npm install
+npm run dev   # Vite
+# or npm start (CRA)
+
+>>>>>>> 95c8b221a003264b798c02302a52a418e6566e33

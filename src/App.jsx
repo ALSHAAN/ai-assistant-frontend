@@ -4,8 +4,11 @@ import ChatWindow from "./ChatWindow.jsx";
 import {MyContext} from "./MyContext.jsx";
 import { useState } from 'react';
 import {v1 as uuidv1} from "uuid";
+<<<<<<< HEAD
 import img from "./assets/lop.png";
 
+=======
+>>>>>>> 95c8b221a003264b798c02302a52a418e6566e33
 
 function App() {
   const [prompt, setPrompt] = useState("");
@@ -26,11 +29,13 @@ function App() {
 
   return (
     <div className='app'>
+
       <img
   src={img}
   alt="test"
   style={{ width: "40px", position: "absolute", top: "10px", left: "10px" }}
 />
+
 
       <MyContext.Provider value={providerValues}>
           <Sidebar></Sidebar>
