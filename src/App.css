@@ -9,6 +9,8 @@ body {
 }
 
 .app {
-    background-color: #212121;
-    display: flex;
+  background: url("/lop.png") no-repeat center center;
+  background-size: cover;
+  background-color: #212121;
+  display: flex;
 }
